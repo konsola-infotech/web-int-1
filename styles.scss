@@ -1,0 +1,77 @@
+// generic styles
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.cta {
+  border: black 5px solid;
+  padding: 1rem 3rem;
+  width: fit-content;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+
+  &:hover {
+    background-color: #e3ae58;
+    border-color: #e3ae58;
+    color: white;
+  }
+}
+
+// block specific styles
+.avatar {
+  flex: 1 1 50%;
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.hero {
+  flex: 1 1 50%;
+  font-family: nunito;
+  background-color: #f1e2d7;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+    gap: 1rem;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: gray;
+  }
+
+  &__title {
+    font-weight: 500;
+    color: gray;
+    text-transform: capitalize;
+
+    &--bold {
+      color: black;
+    }
+  }
+
+  &__list {
+    margin-left: 1.25rem;
+  }
+}
