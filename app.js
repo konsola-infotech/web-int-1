@@ -5,4 +5,8 @@ window.addEventListener("DOMContentLoaded", function () {
     let width = bar.getAttribute("data-percent");
     bar.style.width = `${width}%`;
   });
+
+  jarallax(document.querySelectorAll(".jarallax"), {
+    speed: 0.2,
+  });
 });
