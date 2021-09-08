@@ -318,16 +318,21 @@ $color-yellow: #e3ae57;
 
 // header section start
 
+// second scrolled state of navigation bar
+.scroll-down {
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.1);
+  background-color: white !important;
+}
+
 .header {
   display: flex;
   width: 100%;
   height: 4.25rem;
-  background-color: white;
+  background-color: transparent;
   align-items: center;
   padding: 0 6rem;
   position: fixed;
   z-index: 9;
-  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.1);
 
   &__link {
     font-size: 2rem;
@@ -395,6 +400,139 @@ $color-yellow: #e3ae57;
     &:hover {
       border-radius: 50%;
       background: #e3ae57;
+      color: white;
+    }
+  }
+}
+
+// footer section end
+
+// contact section start
+
+.contact {
+  display: flex;
+  width: 100%;
+  height: 75vh;
+
+  &__form {
+    flex: 1 1 50%;
+  }
+
+  &__right {
+    flex: 1 1 50%;
+    display: flex;
+    background: #161616;
+    color: white;
+  }
+
+  &__img-box {
+    flex: 1 1 50%;
+  }
+
+  &__info {
+    flex: 1 1 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    color: #e3ae57;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 1.25px;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  &__address {
+    font-size: 0.9rem;
+    font-weight: 100;
+    font-style: normal;
+    color: #888;
+  }
+
+  &__form {
+    background: #e9724c;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__main-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  &__input,
+  &__textarea {
+    background: transparent;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e3ae57;
+    color: white;
+
+    &::placeholder {
+      color: white;
+      text-transform: capitalize;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom-color: white;
+    }
+  }
+
+  &__textarea {
+    flex-grow: 1;
+  }
+
+  &__btn {
+    background: white;
+    border-radius: 5rem;
+    padding: 0.75rem 7.5rem;
+    width: fit-content;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: transparent;
       color: white;
     }
   }
