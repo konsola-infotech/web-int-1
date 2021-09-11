@@ -19,6 +19,10 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <link rel="stylesheet" href="styles.css" />
     <script src="./app.js"></script>
   </head>
@@ -26,6 +30,9 @@
     <header class="header">
       <div class="header__logo">
         <a class="header__link" href="index.html">Krypton </a>
+      </div>
+      <div class="header__button">
+<i class="fas fa-bars"></i>
       </div>
       <nav class="header__nav">
         <ul class="header__list">
@@ -47,11 +54,11 @@
         </ul>
       </nav>
     </header>
-    <div class="container container--fluid">
-      <div class="avatar">
-        <img class="avatar__img" src="./images/krypton.jpg" alt="krypton" />
+    <div class="container container--fluid hero">
+      <div class="hero__avatar">
+        <img class="hero__img" src="./images/krypton.jpg" alt="krypton" />
       </div>
-      <div class="hero">
+      <div class="hero__right">
         <div class="hero__box">
           <h2 class="hero__subtitle">welcome to my website</h2>
           <h1 class="hero__title">
@@ -77,8 +84,8 @@
       </div>
     </div>
     <div class="container">
-      <div id="about" class="skills">
-        <div class="skills__meta">
+      <div id="about" class="skills" >
+        <div class="skills__meta" data-aos="fade-up">
           <h1 class="skills__title">Student</h1>
           <h2 class="skills__subtitle">AISSMS's IOIT, Pune</h2>
           <p class="skills__para">
@@ -105,7 +112,7 @@
               class="skills__img"
             />
           </figure>
-          <div class="skills__block">
+          <div class="skills__block" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
             <h1 class="skills__title skills__title--white">My Skills</h1>
             <h2 class="skills__subtitle skills__subtitle--white">
               Programming Languages
@@ -171,7 +178,7 @@
         <div class="exp__img-box">
           <img class="exp__img" src="./images/krypton.jpg" alt="" />
         </div>
-        <div class="exp__info exp__info--brown">
+        <div class="exp__info exp__info--brown"  data-aos="fade-up">
           <h1 class="exp__title">Experience</h1>
           <h2 class="exp__subtitle">Previous tasks</h2>
           <ul class="exp__list">
@@ -214,7 +221,7 @@
         <div class="exp__img-box">
           <img class="exp__img" src="./images/krypton.jpg" alt="" />
         </div>
-        <div class="exp__info exp__info--yellow">
+        <div class="exp__info exp__info--yellow"  data-aos="fade-up">
           <h1 class="exp__title">Experience</h1>
           <h2 class="exp__subtitle">Previous tasks</h2>
           <ul class="exp__list">

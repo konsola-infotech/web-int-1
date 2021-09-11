@@ -1,4 +1,12 @@
+function toggleMenu(event) {
+  console.log("toggleMenu");
+  let nav = document.querySelector(".header__nav");
+  nav.classList.toggle("header__nav--active");
+}
+
 window.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
+
   let filled = document.querySelectorAll(".skill__filled");
 
   filled.forEach(function (bar) {
@@ -9,6 +17,9 @@ window.addEventListener("DOMContentLoaded", function () {
   jarallax(document.querySelectorAll(".jarallax"), {
     speed: 0.2,
   });
+
+  let menuButton = document.querySelector(".header__button");
+  menuButton.addEventListener("click", toggleMenu);
 });
 
 function toggleNav(event) {
